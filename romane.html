@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	min-height:100vh;
+	margin: 0;
+	background-color: lightcoral;
+}
+div{
+		  font-size: 5rem;
+	   
+      height:90vh;
+      line-height: 90vh;
+	    color: #fcedd8;
+	   margin-top: 200px;
+       margin-right:100px;
+	   	font-family: 'Niconne', cursive;
+	    font-weight: 700;
+      text-shadow: 5px 5px 0px #eb452b, 
+                  10px 10px 0px #efa032, 
+                  15px 15px 0px #46b59b, 
+                  20px 20px 0px #017e7f, 
+                  25px 25px 0px #052939, 
+                  30px 30px 0px #c11a2b, 
+                  35px 35px 0px #c11a2b, 
+                  40px 40px 0px #c11a2b, 
+                  45px 45px 0px #c11a2b;
+}
+
+p{
+    text-align: center;
+    font-family: "Helvetica";
+    font-size:0.8rem;
+}
+
+a{
+    color: #d52e3f;
+    text-decoration: none;
+    font-family: 'Niconne', cursive;
+    font-size: 1.2rem;
+
+}
+
+h1 { color: #ffffff; font-family: 'Raleway',sans-serif; font-size: 62px; font-weight: 800; line-height: 72px; margin: 150px 70px 24px; text-align: top; text-transform: uppercase; }
+
+h2 { color: #d54d7b; font-family: "Great Vibes", cursive; font-size: 20px; line-height: 160px; font-weight: normal; margin-bottom: 0px; margin-top: 400px; text-align: center; text-shadow: 0 1px 1px #fff; }
+.heart {
+	background: red;
+	position: relative;
+	height: 100px;
+	width:100px;
+	/* Animation */
+	transform: rotate(-45deg) scale(1);
+	animation: pulse 2s linear infinite;
+}
+
+
+.heart::after {
+	/* background:blue; */
+	background:inherit;
+	border-radius: 50%; /* To make circle */
+	content:'';
+	position:absolute;
+	/* top: -100px;*/
+	top: -50%; /* Inherit properties of parent */
+	/* left: -100px; */
+	left:0;
+	height: 100px;
+	width:100px;
+}
+.heart::before {
+/* background:green; */
+	background:inherit;
+	border-radius: 50%; /* To make circle */
+	content:'';
+	position:absolute;
+	top:0;
+	right:-50%; /* Inherit properties of parent */
+	height: 100px;
+	width:100px;
+}
+
+@keyframes pulse{
+	0% {
+		transform: rotate(-45deg) scale(1);
+		opacity: 0;
+	}/*
+	10% {
+		transform: rotate(-45deg) scale(1.3);
+	}
+	20% {
+		transform: rotate(-45deg) scale(0.9);
+	}
+	30% {
+		transform: rotate(-45deg) scale(1.2);
+	}
+	40% {
+		transform: rotate(-45deg) scale(0.9);
+	}*/
+	50% {
+		transform: rotate(-45deg) scale(1.3);
+		opacity: 1;
+	}/*
+	60% {
+		transform: rotate(-45deg) scale(0.95);
+	}
+	70% {
+		transform: rotate(-45deg) scale(1);
+	} */
+	100% {
+		transform: rotate(-45deg) scale(1);
+		opacity: 1;
+	}
+}
+
+</style>
+<head>
+	<link rel = "stylesheet" href = "style.css">
+</head>
+
+<body>
+    <h1>Romane ne sois pas triste</h1>
+  
+	<div class = "heart"></div>
+    <div>On t'aime</div>
+
+
+</body>
+
+</html>
